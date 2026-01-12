@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Study Podcast Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Study Podcast Player</h1>
+    <p>Paste your script or load <code>podcast.txt</code>, then press Play.</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <button id="loadBtn">Load podcast.txt</button>
+      <button id="playBtn">Play</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="resumeBtn">Resume</button>
+      <button id="stopBtn">Stop</button>
+    </section>
+
+    <section class="settings">
+      <div class="row">
+        <label for="voiceSelect">Voice</label>
+        <select id="voiceSelect"></select>
+      </div>
+
+      <div class="row">
+        <label for="rate">Speed</label>
+        <input id="rate" type="range" min="0.6" max="1.4" step="0.05" value="1.0" />
+        <span id="rateVal">1.00x</span>
+      </div>
+
+      <div class="row">
+        <label for="chunkSize">Chunk size (chars)</label>
+        <input id="chunkSize" type="number" min="300" max="2500" step="100" value="1200" />
+        <span class="hint">Smaller chunks = fewer glitches</span>
+      </div>
+    </section>
+
+    <section class="editor">
+      <label for="textInput"><strong>Podcast Script</strong></label>
+      <textarea id="textInput" placeholder="Paste your full podcast script here..."></textarea>
+    </section>
+
+    <section class="status">
+      <div><strong>Status:</strong> <span id="statusText">Idle</span></div>
+      <div><strong>Progress:</strong> <span id="progressText">0 / 0</span></div>
+      <div class="hint">
+        Tip: Use Chrome/Edge for best results. iOS Safari voices can be limited.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Built with the Web Speech API (no server needed).</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
