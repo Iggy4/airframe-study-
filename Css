@@ -1,0 +1,51 @@
+:root { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+body { margin: 0; padding: 0; background: #0b0f14; color: #e6edf3; }
+header, main, footer { max-width: 1000px; margin: 0 auto; padding: 16px; }
+header { border-bottom: 1px solid #1f2a37; }
+h1 { margin: 0 0 6px 0; }
+p { margin: 0; color: #b3c0d1; }
+
+.controls, .settings, .editor, .status {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid #1f2a37;
+  border-radius: 10px;
+  background: #0f1720;
+}
+
+.controls button {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #111827;
+  color: #e6edf3;
+  cursor: pointer;
+}
+
+.controls button:hover { background: #172033; }
+
+.settings .row {
+  display: grid;
+  grid-template-columns: 160px 1fr auto;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 360px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background: #0b1220;
+  color: #e6edf3;
+  resize: vertical;
+  line-height: 1.35;
+}
+
+.hint { color: #9fb0c3; font-size: 0.9rem; }
+footer { border-top: 1px solid #1f2a37; color: #9fb0c3; }
+code { background: #111827; padding: 2px 6px; border-radius: 6px; } 
