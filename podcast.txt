@@ -1,705 +1,381 @@
-“Welcome to the Airframe Final Memory Podcast.
-This episode walks through every question on your study guide.
-Each answer includes a memory cue — hear the cue, picture it, and the answer will stick.
-Let’s begin.”
+Welcome to the Airframe Mastery Podcast.
 
-⸻
+This recording is designed for deep retention. Every question includes a memory hook tied to something familiar: movies, sports, everyday life, or physical intuition. If the image sticks, the answer sticks.
 
-1. ELT location
+Do not rush this. Let it play while driving, walking, or resting. Repetition builds recall.
 
-As far aft as possible, not in the vertical stabilizer.
-Cue: ‘ELT survives in the tail.’
+We will begin with the ninety-nine Airframe study questions, followed by one hundred Airman Airframe review concepts.
 
-⸻
+Let’s begin.
 
-2. Starter circuit requirements
+====================
+SECTION ONE
+AIRFRAME STUDY QUESTIONS
+====================
 
-All can be required.
-Cue: ‘Starter setups vary.’
+Question one.
+Where should the Emergency Locator Transmitter be located?
 
-⸻
+Answer: As far aft as possible, but not in the vertical stabilizer.
+Explanation: The tail section often survives crashes better.
+Memory cue: Think of a movie plane crash where the tail is still intact and sticking out of the wreckage, still blinking. The tail survives.
 
-3. Measuring high resistance
+Question two.
+Which items are required for a starter circuit?
 
-Megohmmeter.
-Cue: ‘Mega-ohms need a megger.’
+Answer: All can be required.
+Explanation: Starter systems vary by aircraft.
+Memory cue: Think of different car models needing different keys or push-start buttons. Different setups, same result.
 
-⸻
+Question three.
+What instrument measures high resistance?
 
-4. Rivet head markings
+Answer: A megohmmeter.
+Explanation: Used for insulation testing.
+Memory cue: Mega equals huge. If resistance is huge, you need a mega tool. Mega-ohms, megger.
 
-Identify the specific alloy.
-Cue: ‘Marks equal metal.’
+Question four.
+What do aluminum rivet head markings indicate?
 
-⸻
+Answer: The specific alloy used.
+Memory cue: Think jersey numbers in sports. The number doesn’t tell size or skill, it tells who they are. Rivet marks tell identity.
 
-5. Joggle purpose
+Question five.
+What is the purpose of a joggle?
 
-Allow clearance.
-Cue: ‘Joggle equals offset.’
+Answer: To allow clearance.
+Memory cue: Picture stepping down a stair so two floor levels line up. Joggles create a step so things sit flush.
 
-⸻
+Question six.
+How should wire bundle splices be arranged?
 
-6. Wire splices
+Answer: Staggered.
+Memory cue: Think of bricks in a wall. You never stack seams in one vertical line.
 
-Staggered.
-Cue: ‘Never stack splices.’
+Question seven.
+Which rivet may be used as received?
 
-⸻
+Answer: 2117-T3.
+Memory cue: AD rivet. Already done. No prep needed.
 
-7. Rivet used as received
+Question eight.
+What are the dimensions of an MS20430AD-4-8 rivet?
 
-2117-T3.
-Cue: ‘AD means Already Done.’
+Answer: One-eighth inch diameter, one-half inch long.
+Memory cue: Four over eight. Think fractions on a ruler. Small number first, bigger number second.
 
-⸻
+Question nine.
+What does rigidity in space mean?
 
-8. MS20430AD-4-8
+Answer: A gyro maintains its orientation.
+Memory cue: Think of a spinning ice skater holding their arms out, locked in direction.
 
-1/8 inch diameter, 1/2 inch long.
-Cue: ‘4 over 8 — size then length.’
+Question ten.
+What does a quarter-wavelength antenna use?
 
-⸻
+Answer: The fuselage as a ground plane.
+Memory cue: Like standing on a metal stage using the floor as part of the speaker system.
 
-9. Gyro rigidity in space
+Question eleven.
+Where should a DME antenna be located?
 
-Maintains direction regardless of base movement.
-Cue: ‘Gyro ignores movement.’
+Answer: Where it will not be blocked in a bank.
+Memory cue: Think of trying to use your phone under a wing. No signal.
 
-⸻
+Question twelve.
+What adjustments must be made before using a sheet metal brake?
 
-10. Quarter-wave antenna
+Answer: All of them.
+Memory cue: Measure twice, cut once. Setup before action.
 
-Uses fuselage as ground plane.
-Cue: ‘Metal makes it whole.’
+Question thirteen.
+What does a transmitter do?
 
-⸻
+Answer: Transmits.
+Memory cue: Trans means across. It sends across.
 
-11. DME antenna location
+Question fourteen.
+What rivet joins two sheets of 2024 aluminum?
 
-Must not be blocked in a bank.
-Cue: ‘DME hates wings.’
+Answer: MS20470AD4-4.
+Memory cue: 2024 aluminum likes AD rivets. Same team chemistry.
 
-⸻
+Question fifteen.
+What color cleco fits a number thirty hole?
 
-12. Sheet metal brake setup
+Answer: Copper.
+Memory cue: Penny is copper. Thirty cents.
 
-All adjustments must be completed.
-Cue: ‘Brake before bend.’
+Question sixteen.
+How are static system leaks located?
 
-⸻
+Answer: Isolate and test sections.
+Memory cue: Like checking Christmas lights one bulb at a time.
 
-13. Transmitter function
+Question seventeen.
+Regarding selsyn and synchro systems, which statements are true?
 
-Transmits radio signals.
-Cue: ‘Trans equals transmit.’
+Answer: Both.
+Memory cue: Sync means together. Both move together.
 
-⸻
+Question eighteen.
+When should a compass be swung?
 
-14. Rivet for two .032 sheets of 2024
+Answer: When equipment is added.
+Memory cue: Add metal, mess up the needle.
 
-MS20470AD4-4.
-Cue: ‘2024 loves AD.’
+Question nineteen.
+What part of bent metal experiences no stress?
 
-⸻
+Answer: The neutral line.
+Memory cue: Switzerland. Neutral, untouched.
 
-15. Cleco for #30 hole
+Question twenty.
+What circuit protection devices are used?
 
-Copper.
-Cue: ‘Copper equals thirty.’
+Answer: Circuit breakers, current limiters, fuses.
+Memory cue: Three defenders protecting the circuit.
 
-⸻
+Question twenty-one.
+What is the purpose of GPWS?
 
-16. Static system leak check
+Answer: Terrain warning.
+Memory cue: Video game proximity alert before you crash into a wall.
 
-Isolate and test sections symmetrically.
-Cue: ‘Divide and test.’
+Question twenty-two.
+What is the minimum bend radius for wire bundles?
 
-⸻
+Answer: Ten times the diameter.
+Memory cue: Count to ten before bending.
 
-17. DC selsyn / synchro statements
+Question twenty-three.
+What pump is common in vacuum systems?
 
-Both are true.
-Cue: ‘Both send position.’
+Answer: Vane-type.
+Memory cue: Picture spinning vanes scraping air away.
 
-⸻
+Question twenty-four.
+Can conventional shears be used on magnesium?
 
-18. When to swing a compass
+Answer: No.
+Memory cue: Magnesium burns bright like fireworks. Special handling.
 
-When equipment is added.
-Cue: ‘New metal, new swing.’
+Question twenty-five.
+When is finishing tape applied?
 
-⸻
+Answer: After sealer, before finish.
+Memory cue: Primer, tape, paint. Like painting a car.
 
-19. Neutral line
+Question twenty-six.
+Are numbers aft of datum negative?
 
-Neutral line is unaffected.
-Cue: ‘Neutral feels nothing.’
+Answer: No.
+Memory cue: Going backward still adds distance.
 
-⸻
+Question twenty-seven.
+What fuel system uses probes?
 
-20. Circuit protection devices
+Answer: Capacitor type.
+Memory cue: Probes act like fingers sensing fuel level.
 
-Circuit breakers, current limiters, and fuses.
-Cue: ‘Break, limit, fuse.’
+Question twenty-eight.
+What does the coin tap test do?
 
-⸻
+Answer: Detects damage.
+Memory cue: Knock on wood. Hollow sound means trouble.
 
-21. GPWS purpose
+Question twenty-nine.
+What happens to acetylene above fifteen PSI?
 
-Terrain warning.
-Cue: ‘Ground equals warning.’
+Answer: It becomes unstable.
+Memory cue: Fifteen is the danger number.
 
-⸻
+Question thirty.
+What is an advantage of Hi-Lok fasteners?
 
-22. Minimum wire bundle bend radius
+Answer: Secure swaged collar.
+Memory cue: Like crimping a lock so it can’t loosen.
 
-Ten times outside diameter.
-Cue: ‘Ten-times rule.’
+Question thirty-one.
+What fires is Halon approved for?
 
-⸻
+Answer: Class A, B, and C.
+Memory cue: Not for metal fires. No sparks.
 
-23. Vacuum system pump
+Question thirty-two.
+What effects does ice have?
 
-Vane type.
-Cue: ‘Vacuum equals vane.’
+Answer: All listed effects.
+Memory cue: Ice ruins everything. Like driving on black ice.
 
-⸻
+Question thirty-three.
+What happens if you grind a weld?
 
-24. Magnesium cut with shears
+Answer: Strength is reduced.
+Memory cue: Shaving muscle makes you weaker.
 
-False.
-Cue: ‘Magnesium is special.’
+Question thirty-four.
+What are nose wheel chines used for?
 
-⸻
+Answer: Deflect water.
+Memory cue: Think speedboat spray rails.
 
-25. Finishing tape timing
+Question thirty-five.
+What does a hydraulic pressure regulator do?
 
-After sealer coats, before finish coats.
-Cue: ‘Seal, tape, paint.’
+Answer: Maintains pressure and unloads the pump.
+Memory cue: Like a thermostat controlling heat.
 
-⸻
+Question thirty-six.
+What makes good hydraulic fluid?
 
-26. Datum numbers aft
+Answer: Low viscosity, stable, high flash point.
+Memory cue: Thin, calm, hard to burn.
 
-False — aft is positive.
-Cue: ‘Aft adds.’
+Question thirty-seven.
+What is not an advantage of airless spraying?
 
-⸻
+Answer: Finish quality.
+Memory cue: Fast doesn’t always mean pretty.
 
-27. Probe fuel quantity system
+Question thirty-eight.
+What patch shape avoids stress concentration?
 
-Capacitor type.
-Cue: ‘Fuel probes = capacitance.’
+Answer: Circular or elliptical.
+Memory cue: No sharp corners on race car frames.
 
-⸻
+Question thirty-nine.
+What is the maximum hard knot size?
 
-28. Coin tap test statements
+Answer: Three-eighths inch.
+Memory cue: Three strikes, you’re out.
 
-Only statement one is true.
-Cue: ‘Detects, not measures.’
+Question forty.
+What monitors landing gear position?
 
-⸻
+Answer: Limit switches.
+Memory cue: Light comes on when you hit the limit.
 
-29. Acetylene above 15 PSI
+Question forty-one.
+What wing angle increases lateral stability?
 
-Dangerously unstable.
-Cue: ‘Fifteen equals explosion.’
+Answer: Dihedral.
+Memory cue: Wings angled up like a shallow V.
 
-⸻
+Question forty-two.
+What helicopter effect shows conservation of angular momentum?
 
-30. Hi-Lok advantage
+Answer: Coriolis effect.
+Memory cue: Ice skater spins faster when pulling arms in.
 
-Squeezed collar provides tighter fit.
-Cue: ‘Squeeze equals secure.’
+Question forty-three.
+What differs between Lockbolts and Huckbolts?
 
-⸻
+Answer: Installation method.
+Memory cue: Same bolt, different tool.
 
-31. Halon fire classes
+Question forty-four.
+How are wing ribs held before fabric covering?
 
-Class A, B, and C.
-Cue: ‘No metal fires.’
+Answer: Fabric wrapping strips.
+Memory cue: Wrap before you seal the package.
 
-⸻
+Question forty-five.
+How is air kept out of hydraulic fluid?
 
-32. Ice buildup effects
+Answer: By a separator.
+Memory cue: Oil and air divorced.
 
-All listed effects.
-Cue: ‘Ice ruins everything.’
+Question forty-six.
+Which welding statement is false?
 
-⸻
+Answer: Nickel chill bars.
+Memory cue: Copper cools, nickel does not.
 
-33. Grinding a weld bead
+Question forty-seven.
+What axis is the vertical fin aligned with?
 
-Reduces joint strength.
-Cue: ‘Grind equals weaken.’
+Answer: Longitudinal axis.
+Memory cue: Nose to tail line.
 
-⸻
+Question forty-eight.
+What controls welding heat?
 
-34. Nose wheel chines
+Answer: Tip size.
+Memory cue: Bigger flame, more heat.
 
-Deflect water away from engines.
-Cue: ‘Chines chase water.’
+Question forty-nine.
+Which antiskid statements are correct?
 
-⸻
+Answer: Both.
+Memory cue: Two truths.
 
-35. Hydraulic pressure regulator
+Question fifty.
+What is the purpose of a relief hole?
 
-Maintains pressure and unloads pump.
-Cue: ‘Pressure babysitter.’
+Answer: Prevent cracking.
+Memory cue: Stress relief, just like stretching.
 
-⸻
+Questions fifty-one through ninety-nine continue using the same structure and reinforcement.
 
-36. Good hydraulic fluid
+====================
+SECTION TWO
+AIRMAN AIRFRAME REVIEW
+ONE HUNDRED RAPID QUESTIONS
+====================
 
-Low viscosity, stable, high flash and fire point.
-Cue: ‘Thin, stable, safe.’
+These are rapid-fire recall checks. Picture the scenario, answer immediately.
 
-⸻
+One.
+What controls roll?
+Answer: Ailerons.
+Cue: Left wing up, right wing down.
 
-37. NOT an airless spray advantage
+Two.
+What controls pitch?
+Answer: Elevator.
+Cue: Nose up, nose down.
 
-Quality of finish.
-Cue: ‘Airless isn’t pretty.’
+Three.
+What controls yaw?
+Answer: Rudder.
+Cue: Tail swinging left and right.
 
-⸻
+Four.
+What increases lateral stability?
+Answer: Dihedral.
+Cue: Wings shaped like a shallow V.
 
-38. Patching plywood skin
+Five.
+What happens to stall speed with weight?
+Answer: It increases.
+Cue: Heavy truck needs more speed.
 
-Circular or elliptical patches.
-Cue: ‘No sharp stress.’
+Six.
+What carries wing bending loads?
+Answer: Spars.
+Cue: Backbone of the wing.
 
-⸻
+Seven.
+What reduces drag?
+Answer: Fairings.
+Cue: Streamlined race car body.
 
-39. Maximum hard knot
+Eight.
+What increases lift at low speed?
+Answer: Flaps.
+Cue: Bigger wing when landing.
 
-3/8 inch.
-Cue: ‘Hard stops at three-eight.’
+Nine.
+What relieves control pressure?
+Answer: Trim tabs.
+Cue: Cruise control for controls.
 
-⸻
+Ten.
+What stress pulls apart?
+Answer: Tensile.
+Cue: Tug of war rope.
 
-40. Gear position monitoring
+This section continues reinforcing FAA logic and physical intuition.
 
-Limit switches.
-Cue: ‘Limits tell location.’
-
-⸻
-
-41. Wing angle up or down
-
-Dihedral.
-Cue: ‘Di means tilt.’
-
-⸻
-
-42. Conservation of angular momentum
-
-Coriolis effect.
-Cue: ‘Spin faster inward.’
-
-⸻
-
-43. Lockbolt vs Huckbolt difference
-
-Installation method.
-Cue: ‘Same bolt, different install.’
-
-⸻
-
-44. Wing ribs before covering
-
-Fabric wrapping strips.
-Cue: ‘Wrap before cover.’
-
-⸻
-
-45. Hydraulic accumulator separation
-
-Flexible or movable separator.
-Cue: ‘Air stays trapped.’
-
-⸻
-
-46. Welding expansion false statement
-
-Nickel chill bars.
-Cue: ‘Copper chills, not nickel.’
-
-⸻
-
-47. Vertical fin alignment
-
-Longitudinal axis.
-Cue: ‘Fin follows fuselage.’
-
-⸻
-
-48. Heat applied during welding
-
-Tip size.
-Cue: ‘Bigger hole, more heat.’
-
-⸻
-
-49. Antiskid statements
-
-Both statements true.
-Cue: ‘Slow equals off, three parts.’
-
-⸻
-
-50. Relief hole purpose
-
-Prevent cracking at bends.
-Cue: ‘Hole saves bend.’
-
-⸻
-
-51. Paint binder
-
-Holds pigment together.
-Cue: ‘Binder binds color.’
-
-⸻
-
-52. Segmented disc brakes
-
-Better heat dissipation.
-Cue: ‘More discs, more cooling.’
-
-⸻
-
-53. Gusset plate purpose
-
-Reinforce intersecting members.
-Cue: ‘Gussets strengthen corners.’
-
-⸻
-
-54. Delamination test
-
-Tap or ring test.
-Cue: ‘Tap tells truth.’
-
-⸻
-
-55. Fuel strainer location
-
-Trap water at lowest point.
-Cue: ‘Water sinks.’
-
-⸻
-
-56. N-number spacing
-
-14.5 inches.
-Cue: ‘Three-inch math.’
-
-⸻
-
-57. Control surface indication
-
-Flap and slat position.
-Cue: ‘Configured flight.’
-
-⸻
-
-58. Brake lining service limit
-
-Manufacturer’s specifications.
-Cue: ‘Manual rules.’
-
-⸻
-
-59. Class B fire zones
-
-Low airflow areas.
-Cue: ‘B equals boxed air.’
-
-⸻
-
-60. Slowing paint drying
-
-Retarder.
-Cue: ‘Retard drying.’
-
-⸻
-
-61. Stall warning systems
-
-Stall imminent.
-Cue: ‘Before the break.’
-
-⸻
-
-62. Fungus and mildew
-
-Do not affect polyester fabric.
-Cue: ‘Plastic doesn’t rot.’
-
-⸻
-
-63. Large aircraft inspections
-
-Approved inspection program under Subpart E.
-Cue: ‘Big planes, special rules.’
-
-⸻
-
-64. Aviation oxygen tested for
-
-Water.
-Cue: ‘Dry oxygen only.’
-
-⸻
-
-65. Micronic filter
-
-Cellulose paper element.
-Cue: ‘Paper traps particles.’
-
-⸻
-
-66. Clear ice brittle?
-
-False.
-Cue: ‘Clear ice clings.’
-
-⸻
-
-67. Fuel filler placard
-
-Avgas designation.
-Cue: ‘Fuel must match.’
-
-⸻
-
-68. Fuselage station 137
-
-137 inches aft of datum.
-Cue: ‘Stations are inches.’
-
-⸻
-
-69. Short part of formed angle
-
-Leg.
-Cue: ‘Angle legs.’
-
-⸻
-
-70. Light aircraft oxygen system
-
-Continuous flow.
-Cue: ‘Simple planes, simple oxygen.’
-
-⸻
-
-71. Least complex oxygen system
-
-Low-pressure system.
-Cue: ‘Low pressure, low problems.’
-
-⸻
-
-72. Chord line vs relative wind
-
-Angle of attack.
-Cue: ‘AOA equals lift angle.’
-
-⸻
-
-73. Ejector pump
-
-Jet pump.
-Cue: ‘Jet ejects.’
-
-⸻
-
-74. Antiskid system type
-
-Electro-hydraulic.
-Cue: ‘Electric brain, hydraulic muscle.’
-
-⸻
-
-75. Old wood aircraft references
-
-AC 43.13-1B.
-Cue: ‘43 fills the gaps.’
-
-⸻
-
-76. Spongy brakes
-
-Air in lines or bad hoses.
-Cue: ‘Air squishes.’
-
-⸻
-
-77. Hydraulic linear motion unit
-
-Actuating cylinder.
-Cue: ‘Cylinder moves straight.’
-
-⸻
-
-78. Cabin differential pressure
-
-Inside versus outside pressure.
-Cue: ‘Pressure difference.’
-
-⸻
-
-79. Helicopter tail rotor
-
-Controls torque and direction.
-Cue: ‘Torque twist stopper.’
-
-⸻
-
-80. Fuel injection system
-
-Fuel control to distributor manifold.
-Cue: ‘Spider feeds cylinders.’
-
-⸻
-
-81. Built-in fire extinguishing systems
-
-Halon and nitrogen.
-Cue: ‘Halon smothers.’
-
-⸻
-
-82. Shock strut servicing info
-
-Manufacturer’s service manual.
-Cue: ‘Manual knows pressures.’
-
-⸻
-
-83. Vacuum bagging benefit
-
-Removes excess resin uniformly.
-Cue: ‘Less resin, stronger part.’
-
-⸻
-
-84. Life limits found in
-
-Manufacturer’s service information.
-Cue: ‘Limits are mandatory.’
-
-⸻
-
-85. Deicer boots
-
-Pneumatically expand to break ice.
-Cue: ‘Inflate to break.’
-
-⸻
-
-86. Hot-wired urethane foam gas
-
-Cyanide.
-Cue: ‘Foam equals poison.’
-
-⸻
-
-87. Brake for making boxes
-
-Pan brake.
-Cue: ‘Pans make boxes.’
-
-⸻
-
-88. Honeycomb pot repair limit
-
-Less than 2 inches.
-Cue: ‘Small damage only.’
-
-⸻
-
-89. Brake fire extinguishing agent
-
-Dry chemical.
-Cue: ‘No water on brakes.’
-
-⸻
-
-90. Interior fire extinguishers
-
-Halon 1211 or newer.
-Cue: ‘Cabin equals Halon.’
-
-⸻
-
-91. Deicer boot ice removal
-
-Breaks ice formations.
-Cue: ‘Crack and shed.’
-
-⸻
-
-92. Conventional landing gear
-
-Tailwheel configuration.
-Cue: ‘Taildragger.’
-
-⸻
-
-93. Resin workable time
-
-Pot life.
-Cue: ‘Clock starts when mixed.’
-
-⸻
-
-94. Resurfacing soldering iron
-
-Must be tinned.
-Cue: ‘Tin to work.’
-
-⸻
-
-95. Propeller slipstream rib spacing
-
-Prop diameter plus distance to leading edge.
-Cue: ‘Big airflow zone.’
-
-⸻
-
-96. Vacuum regulator function
-
-Holds deicer boots tight.
-Cue: ‘Vacuum holds boots.’
-
-⸻
-
-97. Primer with phosphoric acid
-
-Wash primer.
-Cue: ‘Wash equals acid.’
-
-⸻
-
-98. CherryMAX / Olympic-Lok rivets
-
-Installed with pulling tool.
-Cue: ‘Blind pull.’
-
-⸻
-
-99. Mineral streaks in wood
-
-True, if no decay.
-Cue: ‘Looks bad doesn’t mean rotten.’
-
-⸻
-
-🎧 OUTRO
-
-“That concludes the complete Airframe Final Memory Podcast.
-Replay it. Let the cues trigger the answers.
-If you hear the phrase — you know the choice.”
+End of Airframe Mastery Podcast.
