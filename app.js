@@ -1,5 +1,7 @@
 /* Study Podcast Player
    Uses Web Speech API (speechSynthesis) to speak long text reliably by chunking.
+   - Auto-picks best English voice (prefers Enhanced/Premium/Google if present)
+   - Cache-busts podcast.txt load for GitHub Pages + Safari
 */
 
 const els = {
@@ -24,18 +26,22 @@ let isPlaying = false;
 let selectedVoiceURI = null;
 
 function setStatus(msg) {
-  els.statusText.textContent = msg;
+  if (els.statusText) els.statusText.textContent = msg;
 }
 
 function setProgress() {
-  els.progressText.textContent = `${Math.min(currentIndex, queue.length)} / ${queue.length}`;
+  if (!els.progressText) return;
+  const shown = Math.min(currentIndex, queue.length);
+  els.progressText.textContent = `${shown} / ${queue.length}`;
 }
 
 function loadVoices() {
   voices = window.speechSynthesis.getVoices() || [];
+  if (!els.voiceSelect) return;
+
   els.voiceSelect.innerHTML = "";
 
-  // Helpful ordering: English first
+  // Helpful ordering: English first, then alphabetical
   const sorted = [...voices].sort((a, b) => {
     const aEn = (a.lang || "").toLowerCase().startsWith("en");
     const bEn = (b.lang || "").toLowerCase().startsWith("en");
@@ -43,22 +49,26 @@ function loadVoices() {
     return (a.name || "").localeCompare(b.name || "");
   });
 
-  sorted.forEach(v => {
+  sorted.forEach((v) => {
     const opt = document.createElement("option");
     opt.value = v.voiceURI;
     opt.textContent = `${v.name} (${v.lang})`;
     els.voiceSelect.appendChild(opt);
   });
 
-  // Default to first English voice if possible
-  const firstEnglish = sorted.find(v => (v.lang || "").toLowerCase().startsWith("en"));
-  selectedVoiceURI = firstEnglish ? firstEnglish.voiceURI : (sorted[0]?.voiceURI ?? null);
+  // Prefer: en-US + Enhanced/Premium/Google -> en-US -> any en -> first available
+  const preferred =
+    sorted.find((v) => v.lang?.startsWith("en-US") && /Enhanced|Premium|Google/i.test(v.name)) ||
+    sorted.find((v) => v.lang?.startsWith("en-US")) ||
+    sorted.find((v) => (v.lang || "").toLowerCase().startsWith("en"));
+
+  selectedVoiceURI = preferred?.voiceURI || sorted[0]?.voiceURI || null;
   if (selectedVoiceURI) els.voiceSelect.value = selectedVoiceURI;
 }
 
 function getSelectedVoice() {
-  const uri = els.voiceSelect.value || selectedVoiceURI;
-  return voices.find(v => v.voiceURI === uri) || null;
+  const uri = els.voiceSelect?.value || selectedVoiceURI;
+  return voices.find((v) => v.voiceURI === uri) || null;
 }
 
 // Chunk text into speakable parts (avoid cutting mid-sentence when possible)
@@ -72,24 +82,27 @@ function chunkText(text, maxChars) {
   while (i < clean.length) {
     let end = Math.min(i + maxChars, clean.length);
 
-    // Try to break on sentence boundary
+    // Try to break on sentence boundary or newline
     const slice = clean.slice(i, end);
-    const lastPeriod = Math.max(
+    const lastBreak = Math.max(
       slice.lastIndexOf(". "),
       slice.lastIndexOf("? "),
       slice.lastIndexOf("! "),
       slice.lastIndexOf("\n")
     );
 
-    if (end < clean.length && lastPeriod > 200) {
-      end = i + lastPeriod + 1;
+    // Only use a break if it's not too close to the start (prevents tiny chunks)
+    if (end < clean.length && lastBreak > 200) {
+      end = i + lastBreak + 1;
     }
 
-    chunks.push(clean.slice(i, end).trim());
+    const part = clean.slice(i, end).trim();
+    if (part) chunks.push(part);
+
     i = end;
   }
 
-  return chunks.filter(Boolean);
+  return chunks;
 }
 
 function stopAll() {
@@ -104,6 +117,9 @@ function stopAll() {
 function speakNext() {
   if (!isPlaying) return;
 
+  // If paused, do not enqueue another utterance
+  if (window.speechSynthesis.paused) return;
+
   if (currentIndex >= queue.length) {
     isPlaying = false;
     setStatus("Done");
@@ -112,7 +128,7 @@ function speakNext() {
   }
 
   const voice = getSelectedVoice();
-  const rate = parseFloat(els.rate.value || "1.0");
+  const rate = parseFloat(els.rate?.value || "1.0");
 
   const utter = new SpeechSynthesisUtterance(queue[currentIndex]);
   if (voice) utter.voice = voice;
@@ -126,16 +142,15 @@ function speakNext() {
   utter.onend = () => {
     currentIndex += 1;
     setProgress();
-    // Prevent Safari/iOS stall
-    setTimeout(speakNext, 50);
+    // Small delay helps prevent iOS/Safari stalls
+    setTimeout(speakNext, 60);
   };
 
   utter.onerror = (e) => {
     console.error("TTS error:", e);
-    // Skip problematic chunk rather than dying
     currentIndex += 1;
-    setStatus("Error encountered — skipping chunk");
-    setTimeout(speakNext, 100);
+    setStatus("TTS error — skipping chunk");
+    setTimeout(speakNext, 120);
   };
 
   window.speechSynthesis.speak(utter);
@@ -143,26 +158,32 @@ function speakNext() {
 
 async function loadPodcastTxt() {
   try {
-    const res = await fetch("./podcast.txt", { cache: "no-store" });
+    // Cache-bust to avoid GitHub Pages/Safari serving stale content
+    const url = `./podcast.txt?v=${Date.now()}`;
+    const res = await fetch(url, { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const txt = await res.text();
     els.textInput.value = txt;
     setStatus("Loaded podcast.txt");
   } catch (err) {
-    setStatus("Could not load podcast.txt (run via a server or GitHub Pages)");
+    setStatus("Could not load podcast.txt — ensure it exists in repo root and is named exactly podcast.txt");
     console.error(err);
   }
 }
 
 function playFromStart() {
-  stopAll();
-  const maxChars = parseInt(els.chunkSize.value || "1200", 10);
-  const text = els.textInput.value || "";
+  // iOS Safari sometimes needs cancel() before speak() to start cleanly
+  window.speechSynthesis.cancel();
+
+  const maxChars = parseInt(els.chunkSize?.value || "1200", 10);
+  const text = els.textInput?.value || "";
   queue = chunkText(text, maxChars);
   currentIndex = 0;
 
   if (queue.length === 0) {
-    setStatus("Nothing to play — paste text first");
+    isPlaying = false;
+    setStatus("Nothing to play — paste text or load podcast.txt");
+    setProgress();
     return;
   }
 
@@ -173,7 +194,7 @@ function playFromStart() {
 }
 
 function pause() {
-  if (window.speechSynthesis.speaking) {
+  if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
     window.speechSynthesis.pause();
     setStatus("Paused");
   }
@@ -183,27 +204,41 @@ function resume() {
   if (window.speechSynthesis.paused) {
     window.speechSynthesis.resume();
     setStatus("Playing");
-  } else if (!window.speechSynthesis.speaking && isPlaying) {
-    // If it stalled, continue
+    // If resume doesn't immediately continue (Safari quirk), nudge it
+    setTimeout(() => {
+      if (isPlaying && !window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+        speakNext();
+      }
+    }, 200);
+    return;
+  }
+
+  // If it stalled (not speaking) but we are in playing mode, continue
+  if (isPlaying && !window.speechSynthesis.speaking) {
     speakNext();
   }
 }
 
-// Events
-els.loadBtn.addEventListener("click", loadPodcastTxt);
-els.playBtn.addEventListener("click", playFromStart);
-els.pauseBtn.addEventListener("click", pause);
-els.resumeBtn.addEventListener("click", resume);
-els.stopBtn.addEventListener("click", stopAll);
+// Wire up events
+els.loadBtn?.addEventListener("click", loadPodcastTxt);
+els.playBtn?.addEventListener("click", playFromStart);
+els.pauseBtn?.addEventListener("click", pause);
+els.resumeBtn?.addEventListener("click", resume);
+els.stopBtn?.addEventListener("click", stopAll);
 
-els.voiceSelect.addEventListener("change", () => {
+els.voiceSelect?.addEventListener("change", () => {
   selectedVoiceURI = els.voiceSelect.value;
 });
 
-els.rate.addEventListener("input", () => {
-  els.rateVal.textContent = `${parseFloat(els.rate.value).toFixed(2)}x`;
+els.rate?.addEventListener("input", () => {
+  if (els.rateVal) els.rateVal.textContent = `${parseFloat(els.rate.value).toFixed(2)}x`;
 });
 
-// Load voices (some browsers require onvoiceschanged)
+// Initialize voices
 loadVoices();
 window.speechSynthesis.onvoiceschanged = () => loadVoices();
+
+// Initialize UI labels
+if (els.rateVal && els.rate) els.rateVal.textContent = `${parseFloat(els.rate.value).toFixed(2)}x`;
+setStatus("Idle");
+setProgress();
